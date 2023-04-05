@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- META TAGS -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- LINK PERSONAIZADO -->
+            <meta property="og:title" content="Vermelhinho">
+            <meta property="og:description" content="Soluções Gráficas Inteligentes">
+            <meta property="og:image" content="https://wilgnerjr.github.io/empresa/img/LogoVermelhinho.png">
+            <meta property="og:url" content="https://wilgnerjr.github.io/empresa">
+            <meta property="og:type" content="website">
+
+    <!-- TÍTULO DA PÁGINA = PAGE TITLE -->
+        <link rel="shortcut icon" href="images/logoOriginalSemLegenda.ico" type="image/x-icon">
+        <title>Vermelhinho Cópias</title>
+
+    <!-- IMPORTAÇÕES = IMPORTS -->  
+        <!-- FONTES = FONT -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+
+        <!-- ICONS -->
+            <script src="https://kit.fontawesome.com/038682e29c.js" crossorigin="anonymous"></script>
+        
+        <!-- ANIMAÇÕES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/slide.css">
+
+    <!-- JS -->
+        <script defer src="JS/script.js"></script>
+
+</head>
+<body id="body" class="padrao">
+
+    <!-- TELA DE ABERTURA INTRODUTORIA -->
+    <div id="telaDeAbertura">
+        <img src="images/logoIntrodutoria.webp" alt="Logo Vermelhinho" id="logoTelaDeAbertura">
+        <h1>VERMELHINHO</h1>
+    </div>
+
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">VERMELHINHO</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" onclick="esconder()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link" onclick="esconder()">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos" class="nav-link" onclick="esconder()">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portifolio" class="nav-link" onclick="esconder()">Portifólio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clientes" class="nav-link" onclick="esconder()">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link" onclick="esconder()">Contato</a>
+                </li>
+            </ul>
+            <div class="hamburger" >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="wrapper">
+                <div class="slide-wrapper" data-slide="wrapper">
+                    <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+                    <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+                    <div class="slide-list" data-slide="list">
+                        <div class="slide-item" data-slide="item" data-index="0">
+                            <div class="slide-content">
+                                <img class="slide-image" src="images/imgSlide/assassinscreed.png" alt="Assassin's Creed" />
+                                <div class="slide-description">
+                                    <h3>Assassin's Creed</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item" data-slide="item" data-index="1">
+                            <div class="slide-content">
+                                <img class="slide-image" src="images/imgSlide/fortnite.png" alt="Fortnite" />
+                                <div class="slide-description">
+                                    <h3>Fortnite</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item" data-slide="item" data-index="2">
+                            <div class="slide-content">
+                                <img class="slide-image" src="images/imgSlide/freefire.png" alt="Freefire" />
+                                <div class="slide-description">
+                                    <h3>Freefire</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item" data-slide="item" data-index="3">
+                            <div class="slide-content">
+                                <img class="slide-image" src="images/imgSlide/gta-v.png" alt="GTA V" />
+                                <div class="slide-description">
+                                    <h3>GTA V</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item" data-slide="item" data-index="4">
+                            <div class="slide-content">
+                                <img class="slide-image" src="images/imgSlide/halo5.png" alt="Halo 5" />
+                                <div class="slide-description">
+                                    <h3>Halo 5</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item" data-slide="item" data-index="5">
+                            <div class="slide-content">
+                                <img class="slide-image" src="images/imgSlide/league-of-legends.png" alt="League of Legends" />
+                                <div class="slide-description">
+                                    <h3>League of Legends</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item" data-slide="item" data-index="6">
+                            <div class="slide-content">
+                                <img class="slide-image" src="images/imgSlide/red-dead-redemption-2.png" alt="Red Dead Redemption 2" />
+                                <div class="slide-description">
+                                    <h3>Red Dead Redemption 2</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item" data-slide="item" data-index="7">
+                            <div class="slide-content">
+                                <img class="slide-image" src="images/imgSlide/zelda.png" alt="Zelda" />
+                                <div class="slide-description">
+                                    <h3>Zelda</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-controls" data-slide="controls-wrapper">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="sobre">
+            <h2>SOBRE</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae obcaecati laboriosam dolorem earum. Fuga corrupti magnam quis aperiam hic nulla doloribus quae autem quidem. Ab deserunt accusantium excepturi, repudiandae id qui neque perspiciatis illum odit dicta sint asperiores esse, quod similique exercitationem adipisci ut architecto dolor ipsam ducimus animi delectus placeat provident officia! Quibusdam voluptatibus sit corrupti exercitationem excepturi, culpa nostrum libero quia sunt molestiae. Natus ullam blanditiis dolor maxime autem velit, consequuntur in deleniti non quaerat voluptas, consectetur libero sunt illo provident tempore ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
+            </p>
+        </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae obcaecati laboriosam  Molestiae sint et atque iste aspernatur quae, quia sed possimus laudantium voluptates excepturi nobis molestias nesciunt mollitalias dolorem earum. Fuga corrupti magnam quis aperiam hic nulla doloribus quae autem quidem. Ab deserunt accusantium excepturi, repudiandae id qui neque perspiciatis illum odit dicta sint asperiores esse, quod similique exercitationem adipisci ut architecto dolor ipsam ducimus animi delectus placeat provident officia! Quibusdam voluptatibus sit corrupti exercitationem excepturi, culpa nostrum libero quia sunt molestiae. Natus ullam blanditiis dolor maxime autem velit, consequuntur in deleniti non quaerat voluptas, consectetur libero sunt illo provident tempore ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
+            </p>
+        </section>
+        <section id="portifolio">
+            <h2>Portifólio</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae obcaecati laboriosam ritatis, nostrum impedit itaque ab illum neque deserunt amet, cum laborum vel labore excepturi, maiores debitis nesciunt dolorum. Natus corporis debitis quod dicta commodi fuga nesciunt excepturi vel et, esse, error officia repudiandae rerum labore soluta magnam asperiores. Beatae error ipsum cumque fuga dolorem ad dolores, vitae aut minus saepe adipisci velit modi architecto commodi sequi atque ex eligendi aperiam. Voluptate totam sint molestiae quo sed quia unde odio ipsa reprehenderit. Odio tempore laboriosam quas incidunt sunt quam, iusto provident iste alias dolorem earum. Fuga corrupti magnam quis aperiam hic nulla doloribus quae autem quidem. Ab deserunt accusantium excepturi, repudiandae id qui neque perspiciatis illum odit dicta sint asperiores esse, quod similique exercitationem adipisci ut architecto dolor ipsam ducimus animi delectus placeat provident officia! Quibusdam voluptatibus sit corrupti exercitationem excepturi, culpa nostrum libero quia sunt molestiae. Natus ullam blanditiis dolor maxime autem velit, consequuntur in deleniti non quaerat voluptas, consectetur libero sunt illo provident tempore ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
+            </p>
+        </section>
+        <section id="clientes">
+            <h2>Clientes</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae obcaecati laboriosam accusantium provident nisi deserunt enim incidunt, eius ipsum repellendus tempora quis exercitationem  vel in veniam soluta impedit repudiandae eos, iusto est quisquam earum officia, harum consequuntur odit cupiditate culpa corrupti sit quia nostrum repellat non id vero! Optio doloribus animi voluptas iusto fugiat dolorem explicabo aut ipsam autem eveniet minus quaerat facilis in reprehenderit, similique quisquam aspernatur? Molestiae s ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
+            </p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>
+                nisi deserunt enim incidunt, eius ipsum repellendus tempora quis exercitationem est nobis quae eum dolore? In.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo similique doloribus optio et ut totam  quae autem quidem. Ab deserunt accusantium excepturi, repudiandae id qui neque perspiciatis illum odit dicta sint asperiores esse, quod similique exercitationem adipisci ut architecto dolor ipsam ducimus animi delectus placeat provident officia! Quibusdam voluptatibus sit corrupti exercitationem excepturi, culpa nostrum libero quia sunt molestiae. Natus ullam blanditiis dolor maxime autem velit, consequuntur in deleniti non quaerat voluptas, consectetur libero sunt illo provident tempore ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
+            </p>
+        </section>
+
+        
+    </main>
+
+    <script src="JS/slide.js"></script>
+    <script>
+        initSlider({
+            autoPlay: true,
+            startAtIndex: 0,
+            timeInterval: 2000
+        })
+    </script>
+</body>
+</html>

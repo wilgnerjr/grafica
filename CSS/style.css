@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap");
+@import 'animate.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #961616;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html #body {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+html #body #telaDeAbertura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, rgb(255, 8, 8), rgb(116, 2, 2)) 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 6s ease-out;
+  z-index: 999;
+  transition-delay: 1s;
+}
+html #body #telaDeAbertura #logoTelaDeAbertura {
+  width: 35%;
+  margin: 0px auto;
+  text-align: center;
+  animation: zoomInUp;
+  animation-duration: 1.7s;
+}
+html #body #telaDeAbertura h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin: 0px;
+  animation: backInDown;
+  animation-duration: 1.9s;
+}
+html #body header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #961616;
+  box-shadow: 0px 1px 5px 1px black;
+  z-index: 998;
+}
+html #body header .navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+html #body header .navbar .nav-logo {
+  font-size: 2rem;
+  color: #961616;
+}
+html #body header .navbar .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+html #body header .navbar .nav-menu .nav-item .nav-link {
+  transition: 0.7s ease-in-out;
+}
+html #body header .navbar .nav-menu .nav-item .nav-link:hover {
+  color: rgb(253, 17, 0);
+  font-weight: bold;
+}
+html #body header .navbar .hamburger {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  right: 10px;
+  border: 1px solid transparent;
+  display: none;
+  cursor: pointer;
+  padding-top: 5px;
+}
+html #body header .navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: #961616;
+}
+html #body main {
+  scroll-behavior: smooth;
+  padding: 0px 0px;
+  text-align: justify;
+}
+html #body main section {
+  padding: 70px 0px 0px 0px;
+}
+html #body main section h2 {
+  padding: 20px;
+  text-align: center;
+}
+html #body main #home {
+  width: 100%;
+  height: 100vh;
+  background-color: #1f2029;
+}
+
+@media (max-width: 970px) {
+  html #body #telaDeAbertura #logoTelaDeAbertura {
+    width: 90%;
+  }
+  html #body header .navbar .nav-logo {
+    margin: 0 auto;
+  }
+  html #body header .navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+  }
+  html #body header .navbar .nav-menu .nav-item {
+    width: 80%;
+    padding: 5px;
+    margin: 30px 0 0 0;
+    border-bottom: 2px solid #961616;
+  }
+  html #body header .navbar .nav-menu.active {
+    left: 0;
+  }
+  html #body header .navbar .hamburger {
+    display: block;
+  }
+  html #body header .navbar .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  html #body header .navbar .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  html #body header .navbar .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}/*# sourceMappingURL=style.css.map */
