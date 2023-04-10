@@ -690,9 +690,10 @@ html{
                         margin: 10px 0;
                         .titleRedesScociais{
                             h2{
-                                font-size: medium;
-                                letter-spacing: 5px;
-                                text-shadow: 0px 0px 5px black;
+                                font-family: 'Stick No Bills', sans-serif;
+                                font-size: 2rem;
+                                letter-spacing: 18px;
+                                text-shadow: 0px 0px 10px black;
                             }
                         }
                         div{
@@ -726,7 +727,6 @@ html{
                                         -webkit-background-clip: text;
                                         -webkit-text-fill-color: transparent;
                                         color: black;
-                                        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
                                     }
                                     &:hover{
                                         border-radius: 50%;

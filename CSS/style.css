@@ -651,9 +651,10 @@ html #body main #contato .areaContato .redesSociais {
   margin: 10px 0;
 }
 html #body main #contato .areaContato .redesSociais .titleRedesScociais h2 {
-  font-size: medium;
-  letter-spacing: 5px;
-  text-shadow: 0px 0px 5px black;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 18px;
+  text-shadow: 0px 0px 10px black;
 }
 html #body main #contato .areaContato .redesSociais div {
   display: flex;
@@ -686,7 +687,6 @@ html #body main #contato .areaContato .redesSociais div a .redeInstagram .fa-ins
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 html #body main #contato .areaContato .redesSociais div a .redeInstagram:hover {
   border-radius: 50%;
