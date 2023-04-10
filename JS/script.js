@@ -15,7 +15,7 @@
         setTimeout(function(){
             telaDeAbertura.style.display = 'none';
             body.style.overflow = 'visible';
-        }, 3000);
+        }, 2000);
     }
 
 // CONFIGURAÕES MENU

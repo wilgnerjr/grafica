@@ -641,6 +641,107 @@ html #body main #contato .areaContato {
   padding: 0 20px 20px;
   color: white;
 }
+html #body main #contato .areaContato .redesSociais {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0);
+  margin: 10px 0;
+}
+html #body main #contato .areaContato .redesSociais .titleRedesScociais h2 {
+  font-size: medium;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 5px black;
+}
+html #body main #contato .areaContato .redesSociais .redeInstagram {
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  border: 2px solid transparent;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
+html #body main #contato .areaContato .redesSociais .redeInstagram .fa-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-image: linear-gradient(to bottom, purple, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+html #body main #contato .areaContato .redesSociais .redeInstagram:hover {
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #961616;
+  font-size: 2.2rem;
+  box-shadow: none;
+}
+html #body main #contato .areaContato .redesSociais .fa-facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  color: #3B5998;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  border: 2px solid transparent;
+  font-size: 2rem;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+html #body main #contato .areaContato .redesSociais .fa-facebook:hover {
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #3B5998;
+  font-size: 2.2rem;
+  box-shadow: none;
+}
+html #body main #contato .areaContato .redesSociais .fa-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  color: #25D366;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  border: 2px solid transparent;
+  font-size: 2rem;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+html #body main #contato .areaContato .redesSociais .fa-whatsapp:hover {
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #25D366;
+  box-shadow: none;
+  font-size: 2.2rem;
+}
 html #body main #contato .areaContato .formulario {
   max-width: 400px;
   display: flex;
