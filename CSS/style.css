@@ -860,18 +860,25 @@ html #body main .whatsAppFlutuante a .fa-whatsapp {
   animation-iteration-count: infinite;
 }
 html #body footer {
+  display: flex;
+  justify-content: space-around;
   padding: 20px 10px;
   width: 100%;
   height: 100%;
   background-color: #5e5e5e;
 }
+html #body footer .endereco h2 {
+  color: white;
+  margin: 20px 0px;
+  text-shadow: none;
+}
 html #body footer .endereco address {
   text-align: justify;
   line-height: 25px;
-  color: #961616;
+  color: #ffffff;
   font-size: 1.2rem;
   font-family: sans-serif;
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 html #body footer .endereco address .geolocalizacao {
   max-width: 500px;
@@ -882,6 +889,22 @@ html #body footer .endereco address .geolocalizacao iframe {
   width: 100%;
   border: 2px solid #961616;
   border-radius: 8px;
+}
+html #body footer .horarioDeFuncionamentofooter {
+  display: flex;
+  flex-direction: column;
+}
+html #body footer .horarioDeFuncionamentofooter h2 {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  color: white;
+  padding: 8px 0;
+}
+html #body footer .horarioDeFuncionamentofooter p {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  margin: 10px 0;
 }
 
 @media (max-width: 970px) {
