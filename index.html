@@ -5,34 +5,26 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <!-- LINK PERSONAIZADO -->
             <meta property="og:title" content="Vermelhinho">
             <meta property="og:description" content="Soluções Gráficas Inteligentes">
             <meta property="og:image" content="https://wilgnerjr.github.io/empresa/img/LogoVermelhinho.png">
             <meta property="og:url" content="https://wilgnerjr.github.io/empresa">
             <meta property="og:type" content="website">
-
     <!-- TÍTULO DA PÁGINA = PAGE TITLE -->
         <link rel="shortcut icon" href="images/logoOriginalSemLegenda.ico" type="image/x-icon">
         <title>Vermelhinho Cópias</title>
-
     <!-- IMPORTAÇÕES = IMPORTS -->  
         <!-- FONTES = FONT -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
-
         <!-- ICONS -->
             <script src="https://kit.fontawesome.com/038682e29c.js" crossorigin="anonymous"></script>
-        
         <!-- ANIMAÇÕES -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
     <!-- CSS -->
         <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="CSS/slide.css">
-
     <!-- JS -->
         <script defer src="JS/script.js"></script>
 
@@ -42,14 +34,12 @@
     <!-- TELA DE ABERTURA INTRODUTORIA -->
     <div id="telaDeAbertura">
         <img src="images/logoIntrodutoria.webp" alt="Logo Vermelhinho" id="logoTelaDeAbertura">
-        <h1>VERMELHINHO</h1>
+        <h1>SEJA BEM VINDO!</h1>
     </div>
-
     <!-- CABEÇALHO DA PÁGINA -->
     <header>
         <nav class="navbar">
             <a href="#" class="nav-logo">VERMELHINHO</a>
-
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link" onclick="esconder()">Home</a>
@@ -59,9 +49,6 @@
                 </li>
                 <li class="nav-item">
                     <a href="#servicos" class="nav-link" onclick="esconder()">Serviços</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portifolio" class="nav-link" onclick="esconder()">Portifólio</a>
                 </li>
                 <li class="nav-item">
                     <a href="#clientes" class="nav-link" onclick="esconder()">Clientes</a>
@@ -79,132 +66,300 @@
     </header>
     <main>
         <section id="home">
-            <div class="wrapper">
-                <div class="slide-wrapper" data-slide="wrapper">
-                    <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
-                    <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
-                    <div class="slide-list" data-slide="list">
-                        <div class="slide-item" data-slide="item" data-index="0">
-                            <div class="slide-content">
-                                <img class="slide-image" src="images/imgSlide/assassinscreed.png" alt="Assassin's Creed" />
-                                <div class="slide-description">
-                                    <h3>Assassin's Creed</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-item" data-slide="item" data-index="1">
-                            <div class="slide-content">
-                                <img class="slide-image" src="images/imgSlide/fortnite.png" alt="Fortnite" />
-                                <div class="slide-description">
-                                    <h3>Fortnite</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-item" data-slide="item" data-index="2">
-                            <div class="slide-content">
-                                <img class="slide-image" src="images/imgSlide/freefire.png" alt="Freefire" />
-                                <div class="slide-description">
-                                    <h3>Freefire</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-item" data-slide="item" data-index="3">
-                            <div class="slide-content">
-                                <img class="slide-image" src="images/imgSlide/gta-v.png" alt="GTA V" />
-                                <div class="slide-description">
-                                    <h3>GTA V</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-item" data-slide="item" data-index="4">
-                            <div class="slide-content">
-                                <img class="slide-image" src="images/imgSlide/halo5.png" alt="Halo 5" />
-                                <div class="slide-description">
-                                    <h3>Halo 5</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-item" data-slide="item" data-index="5">
-                            <div class="slide-content">
-                                <img class="slide-image" src="images/imgSlide/league-of-legends.png" alt="League of Legends" />
-                                <div class="slide-description">
-                                    <h3>League of Legends</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-item" data-slide="item" data-index="6">
-                            <div class="slide-content">
-                                <img class="slide-image" src="images/imgSlide/red-dead-redemption-2.png" alt="Red Dead Redemption 2" />
-                                <div class="slide-description">
-                                    <h3>Red Dead Redemption 2</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-item" data-slide="item" data-index="7">
-                            <div class="slide-content">
-                                <img class="slide-image" src="images/imgSlide/zelda.png" alt="Zelda" />
-                                <div class="slide-description">
-                                    <h3>Zelda</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-controls" data-slide="controls-wrapper">
-                    </div>
+            <div class="slide-container">
+                <div class="slide-item slide1 active">
+                    <h2>PONTUALIDADE E QUALIDADE</h2>
                 </div>
+                <div class="slide-item slide2">
+                    <h2>IMPRIMA COM QUEM ENTENDE</h2>
+                </div>
+                <div class="slide-item slide3">
+                    <h2>SEJA NOSSO FILIADO</h2>
+                </div>
+                <button class="prev-button">&lt;</button>
+                <button class="next-button">&gt;</button>
             </div>
-            
         </section>
         <section id="sobre">
-            <h2>SOBRE</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae obcaecati laboriosam dolorem earum. Fuga corrupti magnam quis aperiam hic nulla doloribus quae autem quidem. Ab deserunt accusantium excepturi, repudiandae id qui neque perspiciatis illum odit dicta sint asperiores esse, quod similique exercitationem adipisci ut architecto dolor ipsam ducimus animi delectus placeat provident officia! Quibusdam voluptatibus sit corrupti exercitationem excepturi, culpa nostrum libero quia sunt molestiae. Natus ullam blanditiis dolor maxime autem velit, consequuntur in deleniti non quaerat voluptas, consectetur libero sunt illo provident tempore ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
-            </p>
+            <h2><span>V</span>ERMELHINHO</h2>
+            <div class="sobreItems">
+                <div class="sobre sobre1">
+                    <i class="fa-solid fa-handshake-simple"></i>
+                    <h3>MISSÃO</h3>
+                    <p>
+                        Oferecer aos nossos clientes a melhor solução em reprodução gráfica, cópias e acabamentos, a fim de atender a necessidade e superar as expectativas de cada negócio, oferecendo o conhecimento especifico na área, acabamentos com qualidade, cumprimento de prazos e atendimento personalizado agregando valor ao mercado.
+                    </p>
+                </div>
+                <div class="sobre sobre2">
+                    <i class="fa-solid fa-atom"></i>
+                    <h3>VISÃO</h3>
+                    <p>
+                        Ser uma empresa de referência Estadual nos serviços de reprodução gráfica, impressões, cópias e acabamentos de documentos reconhecida como a melhor opção por clientes, colaboradores, comunidade e fornecedores, pela qualidade de nossos produtos, serviços e relacionamento.
+                    </p>
+                </div>
+                <div class="sobre sobre3">
+                    <i class="fa-solid fa-marker"></i>
+                    <h3>VALORES</h3>
+                    <ul>
+                        <li>Ética</li>
+                        <li>Respeito</li>
+                        <li>Honestidade</li>
+                        <li>Pontualidade</li>
+                        <li>Legalidade</li>
+                        <li>Equidade</li>
+                        <li>Integração</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="servicos">
             <h2>Serviços</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae obcaecati laboriosam  Molestiae sint et atque iste aspernatur quae, quia sed possimus laudantium voluptates excepturi nobis molestias nesciunt mollitalias dolorem earum. Fuga corrupti magnam quis aperiam hic nulla doloribus quae autem quidem. Ab deserunt accusantium excepturi, repudiandae id qui neque perspiciatis illum odit dicta sint asperiores esse, quod similique exercitationem adipisci ut architecto dolor ipsam ducimus animi delectus placeat provident officia! Quibusdam voluptatibus sit corrupti exercitationem excepturi, culpa nostrum libero quia sunt molestiae. Natus ullam blanditiis dolor maxime autem velit, consequuntur in deleniti non quaerat voluptas, consectetur libero sunt illo provident tempore ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
-            </p>
-        </section>
-        <section id="portifolio">
-            <h2>Portifólio</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae obcaecati laboriosam ritatis, nostrum impedit itaque ab illum neque deserunt amet, cum laborum vel labore excepturi, maiores debitis nesciunt dolorum. Natus corporis debitis quod dicta commodi fuga nesciunt excepturi vel et, esse, error officia repudiandae rerum labore soluta magnam asperiores. Beatae error ipsum cumque fuga dolorem ad dolores, vitae aut minus saepe adipisci velit modi architecto commodi sequi atque ex eligendi aperiam. Voluptate totam sint molestiae quo sed quia unde odio ipsa reprehenderit. Odio tempore laboriosam quas incidunt sunt quam, iusto provident iste alias dolorem earum. Fuga corrupti magnam quis aperiam hic nulla doloribus quae autem quidem. Ab deserunt accusantium excepturi, repudiandae id qui neque perspiciatis illum odit dicta sint asperiores esse, quod similique exercitationem adipisci ut architecto dolor ipsam ducimus animi delectus placeat provident officia! Quibusdam voluptatibus sit corrupti exercitationem excepturi, culpa nostrum libero quia sunt molestiae. Natus ullam blanditiis dolor maxime autem velit, consequuntur in deleniti non quaerat voluptas, consectetur libero sunt illo provident tempore ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
-            </p>
+            <div class="areaProdutos">
+                <div class="produto">
+                    <div class="produto1"></div>
+                    <label for="produto1">Adesivo</label>
+                </div>
+                <div class="produto">
+                    <div class="produto2"></div>
+                    <label for="produto2">Banner</label>
+                </div>
+                <div class="produto">
+                    <div class="produto3"></div>
+                    <label for="produto3">Blocos de Comanda</label>
+                </div>
+                <div class="produto">
+                    <div class="produto4"></div>
+                    <label for="produto4">Caixa Personalizada</label>
+                </div>
+                <div class="produto">
+                    <div class="produto5"></div>
+                    <label for="produto5">Calendário</label>
+                </div>
+                <div class="produto">
+                    <div class="produto6"></div>
+                    <label for="produto6">Camiseta</label>
+                </div>
+                <div class="produto">
+                    <div class="produto7"></div>
+                    <label for="produto7">Cardápio</label>
+                </div>
+                <div class="produto">
+                    <div class="produto8"></div>
+                    <label for="produto8">Carimbos</label>
+                </div>
+                <div class="produto">
+                    <div class="produto9"></div>
+                    <label for="produto9">Cartão de Visita
+                    </label>
+                </div>
+                <div class="produto">
+                    <div class="produto10"></div>
+                    <label for="produto10">Chaveiros</label>
+                </div>
+                <div class="produto">
+                    <div class="produto11"></div>
+                    <label for="produto11">Convites</label>
+                </div>
+                <div class="produto">
+                    <div class="produto12"></div>
+                    <label for="produto12">Cópia</label>
+                </div>
+                <div class="produto">
+                    <div class="produto13"></div>
+                    <label for="produto13">Copos Personalizados</label>
+                </div>
+                <div class="produto">
+                    <div class="produto14"></div>
+                    <label for="produto14">Crachá
+                    </label>
+                </div>
+                <div class="produto">
+                    <div class="produto15"></div>
+                    <label for="produto15">Credencial
+                    </label>
+                </div>
+                <div class="produto">
+                    <div class="produto16"></div>
+                    <label for="produto16">Display de Mesa</label>
+                </div>
+                <div class="produto">
+                    <div class="produto17"></div>
+                    <label for="produto17">Encadernação</label>
+                </div>
+                <div class="produto">
+                    <div class="produto18"></div>
+                    <label for="produto18">Fichas</label>
+                </div>
+                <div class="produto">
+                    <div class="produto19"></div>
+                    <label for="produto19">Folder/Panfleto</label>
+                </div>
+                <div class="produto">
+                    <div class="produto20"></div>
+                    <label for="produto20">Impressões 3D</label>
+                </div>
+                <div class="produto">
+                    <div class="produto21"></div>
+                    <label for="produto21">Pasta C/ Bolso
+                    </label>
+                </div>
+                <div class="produto">
+                    <div class="produto22"></div>
+                    <label for="produto22">Plastificação</label>
+                </div>
+                <div class="produto">
+                    <div class="produto23"></div>
+                    <label for="produto23">Plotagem</label>
+                </div>
+                <div class="produto">
+                    <div class="produto24"></div>
+                    <label for="produto24">Scanner</label>
+                </div>
+            </div>
         </section>
         <section id="clientes">
             <h2>Clientes</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae obcaecati laboriosam accusantium provident nisi deserunt enim incidunt, eius ipsum repellendus tempora quis exercitationem  vel in veniam soluta impedit repudiandae eos, iusto est quisquam earum officia, harum consequuntur odit cupiditate culpa corrupti sit quia nostrum repellat non id vero! Optio doloribus animi voluptas iusto fugiat dolorem explicabo aut ipsam autem eveniet minus quaerat facilis in reprehenderit, similique quisquam aspernatur? Molestiae s ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
-            </p>
+            <div class="logoClientes">
+                <div class="cliente cliente1"></div>
+                <div class="cliente cliente2"></div>
+                <div class="cliente cliente3"></div>
+                <div class="cliente cliente4"></div>
+                <div class="cliente cliente5"></div>
+                <div class="cliente cliente6"></div>
+                <div class="cliente cliente7"></div>
+                <div class="cliente cliente8"></div>
+            </div>
+            <h3>AVALIAÇÕES</h3>
+            <div class="avaliacoes">
+                <div class="avaliacaoCliente avaliacaoCliente1">
+                    <div class="avaliacaoCliente1Imagem"></div>
+                    <div class="nomeCliente nomeCliente1"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="avaliacaoCliente avaliacaoCliente2">
+                    <div class="avaliacaoCliente2Imagem"></div>
+                    <div class="nomeCliente nomeCliente2"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="avaliacaoCliente avaliacaoCliente3">
+                    <div class="avaliacaoCliente3Imagem"></div>
+                    <div class="nomeCliente nomeCliente3"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="avaliacaoCliente avaliacaoCliente4">
+                    <div class="avaliacaoCliente4Imagem"></div>
+                    <div class="nomeCliente nomeClient41"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="avaliacaoCliente avaliacaoCliente5">
+                    <div class="avaliacaoCliente5Imagem"></div>
+                    <div class="nomeCliente nomeCliente5"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="avaliacaoCliente avaliacaoCliente6">
+                    <div class="avaliacaoCliente6Imagem"></div>
+                    <div class="nomeCliente nomeCliente6"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente6">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="avaliacaoCliente avaliacaoCliente7">
+                    <div class="avaliacaoCliente7Imagem"></div>
+                    <div class="nomeCliente nomeCliente7"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente7">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contato">
             <h2>Contato</h2>
-            <p>
-                nisi deserunt enim incidunt, eius ipsum repellendus tempora quis exercitationem est nobis quae eum dolore? In.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo similique doloribus optio et ut totam  quae autem quidem. Ab deserunt accusantium excepturi, repudiandae id qui neque perspiciatis illum odit dicta sint asperiores esse, quod similique exercitationem adipisci ut architecto dolor ipsam ducimus animi delectus placeat provident officia! Quibusdam voluptatibus sit corrupti exercitationem excepturi, culpa nostrum libero quia sunt molestiae. Natus ullam blanditiis dolor maxime autem velit, consequuntur in deleniti non quaerat voluptas, consectetur libero sunt illo provident tempore ex, quidem ab eius corrupti molestias. Harum beatae non numquam totam cumque quia asperiores fugit minus, tempore inventore eius aliquam eligendi delectus voluptatum error similique quos quidem. Optio sit in debitis asperiores deserunt, perferendis dicta delectus corrupti ut voluptate et cumque quae officiis, consequatur voluptatem incidunt odit quo? Praesentium eius cupiditate natus, minus voluptas ullam enim delectus iste vitae repudiandae tempora nisi? Cum excepturi delectus dolorum ducimus quas esse facere distinctio dolorem. Natus veniam distinctio repellat. Minima, autem ut quos corrupti adipisci natus id amet reiciendis libero dignissimos!
-            </p>
+            <div class="areaContato">
+                <div class="formulario">
+                    <h2>Contate-nos</h2>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <label>Nome</label>
+                        <input class="inputForm" type="text" name="name" placeholder="Digite Seu Nome" autocomplete="off" required>
+                        <label>Email</label>
+                        <input class="inputForm" type="email" name="email" placeholder="Digite Seu email" required>
+                        <label>Mensagem</label>
+                        <textarea name="message" class="inputForm" cols="30" rows="10" placeholder="Digite Sua Mensagem" required></textarea>
+                        <button type="submit" id="envioDoFormulario">Enviar</button>
+                        <input type="hidden" name="accessKey" value="6b10c147-81a0-4537-a5fc-87b1622dabd5">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html">
+                    </form>
+                </div>
+            </div>
         </section>
-
-        
+        <div class="whatsAppFlutuante">
+            <a href="https://wa.me/556511110000?text=Olá%20Bom%20Dia,%20Gostaria%20de%20fazer%20um%20orçamento." target="_blank">
+                <i class="fa-brands fa-whatsapp" alt='icone do whatsapp para entrar em contato'></i>
+            </a>
+        </div>
+        <footer>
+            <div class="endereco">
+                <h2>Onde Estamos?</h2>
+                <address>
+                    <strong>
+                        Avenida: Historiador Rubens de Mendonça <br>
+                        Numero: 1807 <br>
+                        Bairro: Bosque da Saúde <br>
+                        Cidade: Cuiabá/MT <br>
+                        CEP: 78065-720 <br>
+                        Telefone: <i class="fa-solid fa-phone"></i>+55 (65) 3642-4441 <br>
+                        <div class="geolocalizacao">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122979.95216474576!2d-56.212475237500016!3d-15.58504879999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1af2986e783%3A0x69d4a060dcc3834!2sVermelhinho%20C%C3%B3pias!5e0!3m2!1spt-BR!2sbr!4v1681074309798!5m2!1spt-BR!2sbr"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </strong>
+                </address>
+            </div>
+        </footer>
     </main>
 
     <script src="JS/slide.js"></script>
-    <script>
-        initSlider({
-            autoPlay: true,
-            startAtIndex: 0,
-            timeInterval: 2000
-        })
-    </script>
 </body>
 </html>

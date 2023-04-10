@@ -1,7 +1,10 @@
 // ÁREA DE IMPORTS
     // font-family: 'Roboto', sans-serif;
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
-
+    // font-family: 'Stick No Bills', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500;800&display=swap');
+    // font-family: 'Lily Script One', cursive;
+    @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
     // ANIMAÇÕES
     @import 'animate.css';
 
@@ -64,7 +67,9 @@ html{
                 align-items: center;
                 padding: 0 24px;
                 .nav-logo{
-                    font-size: 2rem;
+                    font-family: 'Stick No Bills', sans-serif;
+                    letter-spacing: 2px;
+                    font-size: 2.5rem;
                     color: #961616;
                 }
                 .nav-menu{
@@ -111,9 +116,8 @@ html{
         }
         main{
             scroll-behavior: smooth;
-            // margin-top: 70px;
             padding: 0px 0px;
-            text-align: justify;
+            text-align: justify;            
             section{
                 padding: 70px 0px 0px 0px;
                 h2{
@@ -122,13 +126,751 @@ html{
                 }
             }
             #home{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                transition: 0.4s ease-in-out;
+                .slide-container{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                    .slide-item {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &.active{
+                            opacity: 1;
+                            transition: opacity 1s ease-in-out;
+                        }
+                        h2{
+                            font-size: 3.5rem;
+                            color: rgb(255, 255, 255);
+                            font-family: 'Stick No Bills', sans-serif;
+                        }
+                    }
+                    .slide1 {
+                        background-color: #961616;
+                    }
+                    .slide2 {
+                        background-color: #961616;
+                    }
+                    .slide3 {
+                        background-color: #961616;
+                    }
+                    .prev-button,
+                    .next-button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 50px;
+                        height: 50px;
+                        background-color: rgba(0, 0, 0, 0.336);
+                        color: white;
+                        font-size: 20px;
+                        border-radius: 50%;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        transition: .3s ease-in-out;
+                        &:hover{
+                            background-color: rgb(0, 0, 0);
+                        }
+                    }
+                    .prev-button {
+                        left: 0;
+                    }
+                    .next-button {
+                        right: 0;
+                    }
+                }
+            }
+            #sobre{
                 width: 100%;
                 height: 100vh;
-                background-color: #1f2029;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-image: url('../images/imagemGrafica/A-14.jpg');
+                padding: 100px 0px 0px 0px;
+                h2{
+                    margin: 0px auto 30px;
+                    width: 300px;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    font-size: 2rem;
+                    border: 1px solid #da0000;
+
+                    span{
+                        color: #961616;
+                        font-family: 'Lily Script One', cursive;
+                        margin: 0 5px;
+                    }
+                    color: #961616;
+                    font-family: 'Roboto', sans-serif;
+                }
+                .sobreItems{
+                    width: 100%;
+                    height: 350px;
+                    background-color: rgba(0, 0, 255, 0);
+                    flex-wrap: wrap;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .sobre{
+                        display: flex;
+                        // justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 300px;
+                        height: 100%;
+                        background-color: #ffffff;
+                        border: 2px solid  #da0000;
+                        border-radius: 8px;
+                        padding: 8px;
+                        i{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100px;
+                            height: 100px;
+                            border: 1px solid #961616;
+                            border-radius: 50%;
+                            font-size: 50px;
+                            color: #961616;
+                        }
+                        h3{
+                            font-family: 'Roboto', sans-serif;
+                            padding: 5px 0;
+                        }
+                        p{
+                            padding-top: 8px;
+                            font-size: 1rem;
+                            font-family: 'Roboto', sans-serif;
+                            text-align: left;
+                        }
+                        li{
+                            font-family: 'Roboto', sans-serif;
+                            margin-top: 8px;
+                            list-style: disc;
+                        }
+                    }
+                }
+            }
+            #servicos{
+                width: 100%;
+                height: 100%;
+                background: url('https://wallpaperboat.com/wp-content/uploads/2019/10/cool-website-background-02.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-attachment: fixed;
+                padding: 80px 5px 10px 5px;
+                h2{
+                    width: 200px;
+                    margin: 20px auto 0px;
+                    font-size: 2rem;
+                    text-decoration: underline;
+                    font-family: 'Lily Script One', cursive;
+                    color: #961616;
+                    border: 1px solid #961616;
+                    box-shadow: 0px 0px 5px 1px white;
+                    letter-spacing: 3px;
+                    background-color: #fff;
+                    border-radius: 15px;
+                }
+                .areaProdutos{
+                    border-radius: 15px;
+                    max-width: 800px;
+                    margin: 20px auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #ffffff;
+                    border: 2px solid #961616;
+                    padding: 10px;
+                    .produto{
+                        outline: none;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 8px;
+                        background-color: transparent;
+                        color: rgb(172, 0, 0);
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 5px;
+                        background-color: rgb(255, 255, 255);
+                        cursor: pointer;
+                        transition: .1s ease-in-out;
+                        &:hover{
+                            transform: scale(0.9);
+                            border: 1px solid #961616;
+
+                        }
+                        label{
+                            font-size: small;
+                            text-align: center;
+                            font-weight: bold;
+                            color: rgb(0, 0, 0);
+                            padding: 1px;
+                        }
+                        div{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        .produto1{
+                            background-image: url('https://www.crtcom.com.br/uploads/produtos/adesivo-vinil-brilho-avery-recorte-eletronico-recorte-eletronico-4x0-162013483945660760460914bb7ba2e5.png');
+                        }
+                        .produto2{
+                            background-image: url('https://images.tcdn.com.br/img/img_prod/965264/banner_com_bastao_e_corda_vertical_181_1_f6c82ffb7f496c410668a9ea8b4197bc.png');
+                        }
+                        .produto3{
+                            background-image: url('https://static.wixstatic.com/media/7e7077_e204f133ae3242ebba9e0a1d4086dabd~mv2.png/v1/fill/w_240,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/COMANDAmockup-min.png');
+                        }
+                        .produto4{
+                            background-image: url('https://teaworld.vteximg.com.br/arquivos/ids/156264-800-800/CaixaTwinings_fechada1000x1000.png?v=638067222389000000');
+                        }
+                        .produto5{
+                            background-image: url('https://cdn.atualcard.com.br/arquivos/menu/normais/calendario-de-parede-com-furo-e-bloco-t1.png');
+                        }
+                        .produto6{
+                            background-image: url('https://mmcanecas.com/wp-content/uploads/2020/08/SUA-ARTE-VAI-AQUI.png');
+                        }
+                        .produto7{
+                            background-image: url('https://loja.printstore.com.br/files/subscribers/bbf5bbf0-b4d7-48c0-8dd8-9bd7e9877649/webfiles/New%20folder%20(2)/cardapiosimplesMAISDEUMAFOLHA.png');
+                        }
+                        .produto8{
+                            background-image: url('https://static3.tcdn.com.br/img/img_prod/586385/carimbo_autotintado_printy_4910_trodat_12323_1_20200714153224.png');
+                        }
+                        .produto9{
+                            background-image: url('https://cdn.atualcard.com.br/arquivos/menu/normais/cartao-de-visita-250g-487x296-.png');
+                        }
+                        .produto10{
+                            background-image: url('http://3.bp.blogspot.com/-sbRzWXGOtUg/VKyLqYyurJI/AAAAAAAAAAM/wGbmdFErwz4/s1600/site_em_construcao.jpg');
+                        }
+                        .produto11{
+                            background-image: url('https://papeleestilo.com.br/wp-content/uploads/2015/10/convite-thaeme.png');
+                        }
+                        .produto12{
+                            background-image: url('https://e7.pngegg.com/pngimages/548/857/png-clipart-cut-copy-and-paste-computer-icons-document-copying-android-android-angle-text.png');
+                        }
+                        .produto13{
+                            background-image: url('http://3.bp.blogspot.com/-sbRzWXGOtUg/VKyLqYyurJI/AAAAAAAAAAM/wGbmdFErwz4/s1600/site_em_construcao.jpg');
+                        }
+                        .produto14{
+                            background-image: url('https://ideiagraficaebrindes.com.br/wp-content/uploads/2021/08/crachapvc.png');
+                        }
+                        .produto15{
+                            background-image: url('https://www.regrafica.com.br/uploads/images/2019/09/31-credencial-para-eventos-1567708185.png');
+                        }
+                        .produto16{
+                            background-image: url('https://cdn.imprimarapido.com.br/arquivos/menu/normais/Prisma_Geral-thumb-249x181.png');
+                        }
+                        .produto17{
+                            background-image: url('https://dataphoto.com.br/wp-content/uploads/2019/03/000000078.png');
+                        }
+                        .produto18{
+                            background-image: url('https://www.espacograficosm.com.br/uploads/produtos/fichas-de-bebidas-6x4cm-papel-cartolina-180g-cores-100fls-c-cola-lateral-1x0-1654262298413193118629a0a1a12aaa.png');
+                        }
+                        .produto19{
+                            background-image: url('https://cdn.graficacores.com.br/arquivos/menu/normais/folder-a5-promocional-14x20.png');
+                        }
+                        .produto20{
+                            background-image: url('http://3.bp.blogspot.com/-sbRzWXGOtUg/VKyLqYyurJI/AAAAAAAAAAM/wGbmdFErwz4/s1600/site_em_construcao.jpg');
+                        }
+                        .produto21{
+                            background-image: url('https://cdn.atualcard.com.br/arquivos/menu/normais/pasta_thumb-.png');
+                        }
+                        .produto22{
+                            background-image: url('https://www.prolam.com.br/wp-content/uploads/2020/11/prolam-polaseal-1.png');
+                        }
+                        .produto23{
+                            background-image: url('https://static.vhsys.com/vh-drive/produtos/35727545/PLOTAGEM_A0_d3d172e.png');
+                        }
+                        .produto24{
+                            background-image: url('https://www.deskshare.com/images/OverviewPages/psp/ComboPackshot-New.jpg');
+                        }
+                    }
+                }
+            }
+            #clientes{
+                background: url('https://img.freepik.com/fotos-premium/gradiente-de-tom-pastel-rosa-azul-roxo-desfocado-foto-abstrata-linhas-suaves-pantone-cor-de-fundo_49683-4059.jpg');
+                background-repeat: no-repeat;
+                background-position:center;
+                background-size: cover;
+                min-height: 100vh;
+                padding-bottom: 20px;
+                h2{
+                    font-size: 2rem;
+                    font-family: 'Lily Script One', cursive;
+                    color: #961616;
+                    letter-spacing: 3px;
+                    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+                }
+                .logoClientes{
+                    margin: 0 auto;
+                    max-width: 700px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    height: 100%;
+                    background-color: #da000000;
+                    gap: 1px;
+                    .cliente{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 150px;
+                        height: 150px;
+                        margin: 5px;
+                        border: 2px solid rgb(152, 62, 255);
+                        box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
+                        border-radius:50%;
+                    }
+                    .cliente1{
+                        background: url('https://hml.aprosoja.com.br/wp-content/uploads/2022/07/logo-aprosoja-rodape.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: rgb(255, 255, 255);
+
+                    }
+                    .cliente2{
+                        background: url('https://btsenergia.com.br/wp-content/uploads/2022/09/bom-futuro-3.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: rgb(255, 255, 255);
+
+                    }
+                    .cliente3{
+                        background: url('https://static.vagas.com.br/portais-de-carreira/images/components/box_divisions/original/box-vagas-logo-amaggi?1588103090');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: rgb(255, 255, 255);
+                    }
+                    .cliente4{
+                        background: url('https://logodetimes.com/times/cuiaba/logo-cuiaba-2048.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: rgb(255, 255, 255);
+
+                    }
+                    .cliente5{
+                        background: url('https://static01.eu/ofertasy.com.br/images/store/179.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: rgb(255, 255, 255);
+
+                    }
+                    .cliente6{
+                        background: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Banco_Bradesco_logo_%28vertical%29.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: rgb(255, 255, 255);
+                    }
+                    .cliente7{
+                        background-image: url('https://media.licdn.com/dms/image/C4D03AQFrjWxkmfFQDg/profile-displayphoto-shrink_800_800/0/1517584155759?e=2147483647&v=beta&t=M-CjB_ccx7qDsGqz-MQay1KuaNRYvtQWRHNodmtfKzo');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .cliente8{
+                        background: url('https://sistemafamato.org.br/wp-content/uploads/2021/11/Selos-Famato-Chapado-1024x1024.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    
+                }
+                h3{
+                    font-family: 'Stick No Bills', sans-serif;
+                    text-align: center;
+                    color: white;
+                    font-size: 2rem;
+                    margin: 25px 0px 5px 0px;
+                }
+                .avaliacoes{
+                    width: 650px;
+                    height: 160px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    overflow-x: scroll;
+                    margin: 0 auto;
+                    border: 2px solid white;
+                    background-color: rgba(0, 255, 255, 0);
+                    border-radius: 5px;
+                    .avaliacaoCliente{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        min-width: 114px;
+                        height: 120px;
+                        margin: 5px 5px;
+                        border: 2px solid white;
+                        background-color: rgba(204, 204, 204, 0);
+                        border-radius: 8px;
+                        color: white;
+                    }
+                    .avaliacaoCliente1{
+                        .avaliacaoCliente1Imagem{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin: 0px;
+                            border: 2px solid rgb(255, 255, 255);
+                            // background-color: #ffffff;
+                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
+                            background-size: cover;
+                        }
+                        .estrelasCliente1{
+                            .fa-star{
+                                color: gold;
+                            }
+                        }
+                    }
+                    // 
+                    .avaliacaoCliente2{
+                        .avaliacaoCliente2Imagem{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin: 0px;
+                            border: 2px solid rgb(255, 255, 255);
+                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
+                            background-size: cover;
+                        }
+                        .estrelasCliente2{
+                            .fa-star{
+                                color: gold;
+                            }
+                        }
+                    }
+                    // 
+                    .avaliacaoCliente3{
+                        .avaliacaoCliente3Imagem{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin: 0px;
+                            border: 2px solid rgb(255, 255, 255);
+                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
+                            background-size: cover;
+                        }
+                        .estrelasCliente3{
+                            .fa-star{
+                                color: gold;
+                            }
+                        }
+                    }
+                    // 
+                    .avaliacaoCliente4{
+                        .avaliacaoCliente4Imagem{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin: 0px;
+                            border: 2px solid rgb(255, 255, 255);
+                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
+                            background-size: cover;
+                        }
+                        .estrelasCliente4{
+                            .fa-star{
+                                color: gold;
+                            }
+                        }
+                    }
+                    // 
+                    .avaliacaoCliente5{
+                        .avaliacaoCliente5Imagem{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin: 0px;
+                            border: 2px solid rgb(255, 255, 255);
+                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
+                            background-size: cover;
+                        }
+                        .estrelasCliente5{
+                            .fa-star{
+                                color: gold;
+                            }
+                        }
+                    }
+                    // 
+                    .avaliacaoCliente6{
+                        .avaliacaoCliente6Imagem{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin: 0px;
+                            border: 2px solid rgb(255, 255, 255);
+                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
+                            background-size: cover;
+                        }
+                        .estrelasCliente6{
+                            .fa-star{
+                                color: gold;
+                            }
+                        }
+                    }
+                    // 
+                    .avaliacaoCliente7{
+                        .avaliacaoCliente7Imagem{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin: 0px;
+                            border: 2px solid rgb(255, 255, 255);
+                            background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
+                            background-size: cover;
+                        }
+                        .estrelasCliente7{
+                            .fa-star{
+                                color: gold;
+                            }
+                        }
+                    }
+                }
+            }
+            #contato{
+                width: 100%;
+                height: 100%;
+                background: url('../images/imagemGrafica/cia.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                // padding: 10px;
+                h2{
+                    font-size: 2rem;
+                    font-family: 'Lily Script One', cursive;
+                    color: white;
+                    letter-spacing: 3px;
+                    text-shadow: 0px 0px 6px black;
+                }
+                .areaContato{
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    padding: 0 20px 20px;
+                    color: white;
+                    .formulario{
+                        // background-color: #5e5e5e;
+                        max-width: 400px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                        // border: 1px solid white;
+
+                        h2{
+                            color: #f5f5f5;
+                            border-radius: 8px;
+                            font-size: 2.5rem;
+                            font-family: sans-serif;
+                            background: rgba(255, 255, 255, 0.719);
+                            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                            backdrop-filter: blur( 20px );
+                            -webkit-backdrop-filter: blur( 20px );
+                            border-radius: 10px;
+                            border: 1px solid  #961616;
+                        }
+                        form{
+                            max-height: 400px;
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            // background-color: #02ffc8;
+                            label{
+                                color: #fffdfd;
+                                font-size: 20px;
+                                font-weight: bold;
+                                margin-bottom: 4px;
+                                text-shadow: 0px 0px 5px #961616;                
+                            }
+                            input{
+                                padding: 10px;
+                                border: 1px solid red;
+                                margin-bottom: 10px;
+                                font-size: 15px;
+                                outline: none;
+                                transition: .3s;
+                                color: #363636;
+                                background: rgba( 255, 255, 255, 0.5 );
+                                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                                backdrop-filter: blur( 20px );
+                                -webkit-backdrop-filter: blur( 20px );
+                                border-radius: 3px;
+                                border: 1px solid rgb(255, 255, 255);
+                                &:focus{
+                                    color: #961616;
+                                    border: 1px solid #961616;
+                                    border-radius: 10px;
+                                }
+                            }
+                            textarea{
+                                padding: 10px;
+                                outline: none;
+                                border: 0;
+                                font-size: 15px;
+                                margin-bottom: 30px;
+                                transition: all 0.3s;
+                                border: 1px solid #961616;
+                                color: #363636;
+                                background: rgba( 255, 255, 255, 0.5 );
+                                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                                backdrop-filter: blur( 10px );
+                                -webkit-backdrop-filter: blur( 20px );
+                                border-radius: 3px;
+                                border: 1px solid rgb(255, 255, 255);
+
+                                &:focus{
+                                    color: #961616;
+                                    border-radius: 10px;
+                                }
+                            }
+                            button{
+                                padding: 15px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                background-color: transparent;
+                                border: 1px solid white;
+                                color: white;
+                                transition: all .5s;
+                                margin-bottom: 15px;
+                                &:hover{
+                                    background-color: #f5f5f5;
+                                    color: green;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }                
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .whatsAppFlutuante{
+                a{
+                    .fa-whatsapp{
+                        z-index: 1;
+                        position: fixed;
+                        bottom: 15px;
+                        right: 15px;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        font-size: 25px;
+                        color: green;
+                        background-color: white;
+                        border: 2px solid black;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        animation-name: animaWhatsApp;
+                        animation-duration:2s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+        }
+        footer{
+            padding: 20px 10px;
+            width: 100%;
+            height: 100%;
+            background-color: #5e5e5e;
+            .endereco{
+                address{
+                    text-align: justify;
+                    line-height: 25px;
+                    color: #961616;
+                    font-size: 1.2rem;
+                    font-family: sans-serif;
+                    text-shadow: 0px 0px 5px white;
+                    .geolocalizacao{
+                        max-width: 500px;
+                        padding: 20px 0px;
+                        iframe{
+                            margin: 0 auto;
+                            width: 100%;
+                            border: 2px solid #961616;
+                            border-radius: 8px;
+                        }
+                    }
+                }
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -172,7 +914,6 @@ html{
                             left: 0;
                         }
                     }
-                    
                     .hamburger{
                         display: block;
                         &.active .bar:nth-child(2){
@@ -186,8 +927,64 @@ html{
                         }
                     }
                 }
-            }   
+            }
+            main{
+                #home{
+                    .slide-container{
+                        h2{
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+                #sobre{
+                    height: 100%;
+                    .sobreItems{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        .sobre{
+                            margin: 10px 0px;
+                        }
+                    }
+                }
+                #servicos{
+                    .areaProdutos{
+                        height: 100%;
+                        background-color: rgba(255, 255, 255, 0);
+                        border: none;
+                        .produtos{
+                            background-color: #da0000;
+                        }
+                    }
+                }
+                #clientes{
+                    .avaliacoes{
+                        width: 90%;
+                    }
+                }
+                #contato{
+                }
+            }
         }        
     }
 }
     
+
+
+//  ==========================Animações=======================
+    @keyframes animaWhatsApp {
+        0%{ 
+            color: green;
+            background: white;
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+            color: white;
+            background: green;
+        }
+        100%{
+            transform: scale(1);
+        }
+    }

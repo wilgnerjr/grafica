@@ -45,4 +45,63 @@
         }
     }
 
-    
+// SLIDER INTRODUTORIO
+    const slideItems = document.querySelectorAll('.slide-item');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    let slideIndex = 0;
+
+    const showSlide = (n) => {
+    slideItems.forEach((item) => {
+        item.classList.remove('active');
+    });
+    slideItems[n].classList.add('active');
+    };
+
+    const nextSlide = () => {
+    slideIndex++;
+    if (slideIndex >= slideItems.length) {
+        slideIndex = 0;
+    }
+    showSlide(slideIndex);
+    };
+
+    const prevSlide = () => {
+    slideIndex--;
+    if (slideIndex < 0) {
+        slideIndex = slideItems.length - 1;
+    }
+    showSlide(slideIndex);
+    };
+
+    setInterval(() => {
+    nextSlide();
+    }, 5000);
+
+    prevButton.addEventListener('click', () => {
+    prevSlide();
+    });
+
+    nextButton.addEventListener('click', () => {
+    nextSlide();
+    });
+
+    let startX = 0;
+    let endX = 0;
+
+    prevButton.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    });
+
+    prevButton.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+    if (endX - startX > 50) {
+        prevSlide();
+    }
+    });
+
+    nextButton.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    });
+
+// Formulario
