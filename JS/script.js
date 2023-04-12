@@ -117,23 +117,23 @@ function exibirMensagem() {
     var status = "";
   
     if (diaSemana === 0) { // Domingo
-      mensagem = "&#x26AB;FECHADO";
+      mensagem = "● FECHADO";
       status = "fechado";
       
     } else if (diaSemana === 6) { // Sábado
       if (hora >= 8 && hora < 11) {
-        mensagem = "&#x26AB;ABERTO";
+        mensagem = "● ABERTO";
         status = "aberto";
       } else {
-        mensagem = "&#x26AB;FECHADO";
+        mensagem = "● FECHADO";
         status = "fechado";
       }
     } else { // Dias de semana (de segunda a sexta)
       if (hora >= 7 && hora < 18) {
-        mensagem = "&#x26AB;ABERTO";
+        mensagem = "● ABERTO";
         status = "aberto";
       } else {
-        mensagem = "&#9673; FECHADO";
+        mensagem = "● FECHADO";
         status = "fechado";
       }
     }

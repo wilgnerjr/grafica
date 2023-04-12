@@ -240,14 +240,13 @@ html{
                     border-radius: 8px;
                     font-size: 2rem;
                     border: 1px solid #da0000;
-
+                    color: #961616;
+                    font-family: 'Roboto', sans-serif;
                     span{
                         color: #961616;
                         font-family: 'Lily Script One', cursive;
                         margin: 0 5px;
                     }
-                    color: #961616;
-                    font-family: 'Roboto', sans-serif;
                 }
                 .sobreItems{
                     width: 100%;
@@ -259,7 +258,6 @@ html{
                     justify-content: space-around;
                     .sobre{
                         display: flex;
-                        // justify-content: center;
                         align-items: center;
                         flex-direction: column;
                         width: 300px;
@@ -574,7 +572,6 @@ html{
                             border-radius: 50%;
                             margin: 0px;
                             border: 2px solid rgb(255, 255, 255);
-                            // background-color: #ffffff;
                             background-image: url('https://wilgnerjr.github.io/portifolio-2.0/imagens/eu.webp');
                             background-size: cover;
                         }
@@ -696,7 +693,6 @@ html{
                 background-position: center;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                // padding: 10px;
                 h2{
                     font-size: 2rem;
                     font-family: 'Lily Script One', cursive;
@@ -733,7 +729,6 @@ html{
                             justify-content: center;
                             width: 90px;
                             height: 90px;
-                            // background-color: black;
                             a{
                                 .redeInstagram{
                                     background-color: #ffffff;
@@ -888,7 +883,6 @@ html{
                                 font-size: 15px;
                                 margin-bottom: 30px;
                                 transition: all 0.3s;
-                                // border: 1px solid #961616;
                                 color: #363636;
                                 background: rgba( 255, 255, 255, 0.5 );
                                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -1013,179 +1007,150 @@ html{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// CONFIGRAÇÕES MOBILE
-@media (max-width:970px) {
-    html{
-        #body{
-            #telaDeAbertura{
-                #logoTelaDeAbertura{
-                    width: 90%;
-                }
-            }
-            header{
-                .navbar{
-                    .nav-logo{
-                        margin: 0 auto;
-                    }
-                    .nav-menu{
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-start;
-                        position: fixed;
-                        left: -100%;
-                        top: 70px;
-                        gap: 0;
-                        flex-direction: column;
-                        background-color: #ffffff;
-                        width: 100%;
-                        height: 100vh;
-                        text-align: center;
-                        transition: 0.3s;
-                        .nav-item{
-                            width: 80%;
-                            padding: 5px;
-                            margin: 30px 0 0 0;
-                            border-bottom: 2px solid #961616;
-                        }
-                        &.active{
-                            left: 0;
-                        }
-                    }
-                    .hamburger{
-                        display: block;
-                        &.active .bar:nth-child(2){
-                            opacity: 0;
-                        }
-                        &.active .bar:nth-child(1){
-                            transform: translateY(8px) rotate(45deg);
-                        }
-                        &.active .bar:nth-child(3){
-                            transform: translateY(-8px) rotate(-45deg);
-                        }
+//  ======================CONFIGRAÇÕES MOBILE=================
+    @media (max-width:970px) {
+        html{
+            #body{
+                #telaDeAbertura{
+                    #logoTelaDeAbertura{
+                        width: 90%;
                     }
                 }
-            }
-            main{
-                #home{
-                    .slide-container{
-                        h2{
-                            font-size: 2.5rem;
+                header{
+                    .navbar{
+                        .nav-logo{
+                            margin: 0 auto;
                         }
-                    }
-                }
-                #sobre{
-                    height: 100%;
-                    .sobreItems{
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                        .sobre{
-                            margin: 10px 0px;
-                            p{
-                                font-weight: 400;
+                        .nav-menu{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            position: fixed;
+                            left: -100%;
+                            top: 70px;
+                            gap: 0;
+                            flex-direction: column;
+                            background-color: #ffffff;
+                            width: 100%;
+                            height: 100vh;
+                            text-align: center;
+                            transition: 0.3s;
+                            .nav-item{
+                                width: 80%;
+                                padding: 5px;
+                                margin: 30px 0 0 0;
+                                border-bottom: 2px solid #961616;
+                            }
+                            &.active{
+                                left: 0;
+                            }
+                        }
+                        .hamburger{
+                            display: block;
+                            &.active .bar:nth-child(2){
+                                opacity: 0;
+                            }
+                            &.active .bar:nth-child(1){
+                                transform: translateY(8px) rotate(45deg);
+                            }
+                            &.active .bar:nth-child(3){
+                                transform: translateY(-8px) rotate(-45deg);
                             }
                         }
                     }
                 }
-                #servicos{
-                    .areaProdutos{
+                main{
+                    #home{
+                        .slide-container{
+                            h2{
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }
+                    #sobre{
                         height: 100%;
-                        background-color: rgba(255, 255, 255, 0);
-                        border: none;
-                        .produtos{
-                            background-color: #da0000;
+                        .sobreItems{
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                            .sobre{
+                                margin: 10px 0px;
+                                p{
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                    #servicos{
+                        .areaProdutos{
+                            height: 100%;
+                            background-color: rgba(255, 255, 255, 0);
+                            border: none;
+                            .produtos{
+                                background-color: #da0000;
+                            }
+                        }
+                    }
+                    #clientes{
+                        .avaliacoes{
+                            width: 90%;
+                        }
+                    }
+                    #contato{
+                        .areaContato{
+                            display: grid;
+                            flex-wrap: wrap;
+                            grid-template-columns: 100%;
+                            
                         }
                     }
                 }
-                #clientes{
-                    .avaliacoes{
-                        width: 90%;
-                    }
-                }
-                #contato{
-                    .areaContato{
-                        display: grid;
-                        flex-wrap: wrap;
-                        grid-template-columns: 100%;
-                        
-                    }
-                }
-            }
-            footer{
-                flex-direction: column-reverse;
-                .horarioDeFuncionamentofooter{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    flex-direction: row;
-                    div{
+                footer{
+                    flex-direction: column-reverse;
+                    .horarioDeFuncionamentofooter{
                         display: flex;
-                        flex-direction: column;
-                        align-items: normal;
-                        justify-content: center;
+                        align-items: center;
+                        justify-content: space-around;
+                        flex-direction: row;
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: normal;
+                            justify-content: center;
+                            h2{
+                                padding-left: 20px;
+                                text-align: left;
+                                font-size: 1.5rem;
+                            }
+                            p{
+
+                                margin: 10px 5px;
+                                font-size: 1.2rem;
+                                padding-left: 20px;
+                                text-align: left;
+                            }
+                        }
+                        
+                        img{
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 8px;
+                            border: 1px solid white;
+                            box-shadow: 0px 0px 40px black;
+                            margin: 5px;
+                        }
+                    }
+                    .endereco{
+                        margin: 2rem;
                         h2{
-                            padding-left: 20px;
-                            text-align: left;
-                            font-size: 1.5rem;
-                        }
-                        p{
-
-                            margin: 10px 5px;
-                            font-size: 1.2rem;
-                            padding-left: 20px;
-                            text-align: left;
+                            text-align: center;
                         }
                     }
-                    
-                    img{
-                        width: 150px;
-                        height: 150px;
-                        border-radius: 8px;
-                        border: 1px solid white;
-                        box-shadow: 0px 0px 40px black;
-                        margin: 5px;
-                    }
                 }
-                .endereco{
-                    margin: 2rem;
-                    h2{
-                        text-align: center;
-                    }
-                }
-            }
-        }        
+            }        
+        }
     }
-}
-
 //  ==========================Animações=======================
     @keyframes animaWhatsApp {
         0%{ 
