@@ -44,7 +44,6 @@
             body.style.overflow = 'auto';
         }
     }
-
 // SLIDER INTRODUTORIO
     const slideItems = document.querySelectorAll('.slide-item');
     const prevButton = document.querySelector('.prev-button');
