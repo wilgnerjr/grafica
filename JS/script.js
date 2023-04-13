@@ -102,6 +102,67 @@
     nextButton.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     });
+// ==========================================================
+
+const modal1 = document.getElementById('modal1');
+      const modal2 = document.getElementById('modal2');
+      const closeButton1 = document.getElementById('closeButton1');
+      const closeButton2 = document.getElementById('closeButton2');
+      const produto1 = document.querySelector('.produto1');
+      const produto2 = document.querySelector('.produto2');
+
+      // Adiciona ouvinte de evento para abrir o modal 1
+      produto1.addEventListener('click', () => {
+        modal1.style.display = 'block';
+        document.body.classList.add('modal-open');
+      });
+
+      // Adiciona ouvinte de evento para abrir o modal 2
+      produto2.addEventListener('click', () => {
+        modal2.style.display = 'block';
+        document.body.classList.add('modal-open');
+      });
+
+      // Adiciona ouvinte de evento para fechar o modal 1
+      closeButton1.addEventListener('click', () => {
+        modal1.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      });
+
+      // Adiciona ouvinte de evento para fechar o modal 2
+      closeButton2.addEventListener('click', () => {
+        modal2.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    });
+    // Adiciona ouvinte de evento para fechar o modal 1 quando clicar fora dele
+    window.addEventListener('click', (event) => {
+    if (event.target === modal1) {
+        modal1.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+    if (event.target === modal2) {
+        modal2.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Formulario
 
